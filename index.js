@@ -12,7 +12,7 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
 }
 
 function deleteFromObjectByKey(object, key) {
-  var modRecipe = object 
+  var modRecipe = Object.assign({}, obj)
   delete modRecipe[key]
   return modRecipe
 }
