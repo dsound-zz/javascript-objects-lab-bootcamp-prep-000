@@ -16,3 +16,7 @@ function deleteFromObjectByKey(object, key) {
   delete modRecipe[key]
   return modRecipe
 }
+
+function destructivelyDeleteFromObjectByKey(object, key) {
+  return delete object[key]
+}
